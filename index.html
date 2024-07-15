@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,163 +20,210 @@
         <div class="">
             <div class="border-b w-full bg-green-950 border-gray-200">
                 <nav class="flex space-x-1" aria-label="Tabs" role="tablist">
-                    <button type="button" class="flex-1 hs-tab-active:bg-white hs-tab-active:border-b-transparent hs-tab-active:text-green-950 -mb-px py-3 px-4 inline-flex items-center gap-x-2 bg-gray-50 text-sm font-medium text-center border text-gray-500 rounded-tr-lg hover:text-green-950 disabled:opacity-50 disabled:pointer-events-none active" id="card-type-tab-item-1" data-hs-tab="#card-type-tab-preview" aria-controls="card-type-tab-preview" role="tab">
+                    <button type="button"
+                        class="flex-1 hs-tab-active:bg-white hs-tab-active:border-b-transparent hs-tab-active:text-green-950 -mb-px py-3 px-4 inline-flex items-center gap-x-2 bg-gray-50 text-sm font-medium text-center border text-gray-500 rounded-tr-lg hover:text-green-950 disabled:opacity-50 disabled:pointer-events-none active"
+                        id="card-type-tab-item-1" data-hs-tab="#card-type-tab-preview"
+                        aria-controls="card-type-tab-preview" role="tab">
                         Key Activities
                     </button>
-                    <button type="button" class="flex-1 hs-tab-active:bg-white hs-tab-active:border-b-transparent hs-tab-active:text-green-950 -mb-px py-3 px-4 inline-flex items-center gap-x-2 bg-gray-50 text-sm font-medium text-center border text-gray-500 rounded-tl-lg hover:text-green-950 disabled:opacity-50 disabled:pointer-events-none" id="card-type-tab-item-2" data-hs-tab="#card-type-tab-2" aria-controls="card-type-tab-2" role="tab">
+                    <button type="button"
+                        class="flex-1 hs-tab-active:bg-white hs-tab-active:border-b-transparent hs-tab-active:text-green-950 -mb-px py-3 px-4 inline-flex items-center gap-x-2 bg-gray-50 text-sm font-medium text-center border text-gray-500 rounded-tl-lg hover:text-green-950 disabled:opacity-50 disabled:pointer-events-none"
+                        id="card-type-tab-item-2" data-hs-tab="#card-type-tab-2" aria-controls="card-type-tab-2"
+                        role="tab">
                         Recommendations
                     </button>
                 </nav>
             </div>
 
             <div class="mt-6 flex-1 flex-col content-center w-11/12 md:w-1/2 mx-auto h-fit">
-                <div id="card-type-tab-preview" role="tabpanel" class="p-6 border-2 rounded-xl border-green-950 box-border" aria-labelledby="card-type-tab-item-1">
+                <div id="card-type-tab-preview" role="tabpanel"
+                    class="p-6 border-2 rounded-xl border-green-950 box-border" aria-labelledby="card-type-tab-item-1">
                     <p class="text-green-950 text-center font-semibold text-3xl">Know what's best for your laptop!</p>
                     <p class="text-md text-center font-medium text-green-950">Enter your specs and find out...</p>
                     <div>
                         <h3 class="font-bold text-2xl text-green-950">Processor</h3>
                         <p class="block text-sm font-medium leading-6 text-gray-900">Manufacturer</p>
-                        <nav class="relative z-0 flex border rounded-xl overflow-hidden" aria-label="Tabs" role="tablist">
-                            <button type="button" class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active" id="bar-with-underline-item-1" data-hs-tab="#bar-with-underline-1" aria-controls="bar-with-underline-1" role="tab">
-                              Intel
+                        <nav id="manufacturer" class="relative z-0 flex border rounded-xl overflow-hidden"
+                            aria-label="Tabs" role="tablist">
+                            <button type="button" value="intel-processor"
+                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active"
+                                id="bar-with-underline-item-1" data-hs-tab="#bar-with-underline-1"
+                                aria-controls="bar-with-underline-1" role="tab">
+                                Intel
                             </button>
-                            <button type="button" class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none" id="bar-with-underline-item-2" data-hs-tab="#bar-with-underline-2" aria-controls="bar-with-underline-2" role="tab">
-                              AMD
+                            <button type="button" value="amd-processor"
+                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
+                                id="bar-with-underline-item-2" data-hs-tab="#bar-with-underline-2"
+                                aria-controls="bar-with-underline-2" role="tab">
+                                AMD
                             </button>
-                            <button type="button" class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none" id="bar-with-underline-item-3" data-hs-tab="#bar-with-underline-3" aria-controls="bar-with-underline-3" role="tab">
-                              Apple
+                            <button type="button" value="apple-processor"
+                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
+                                id="bar-with-underline-item-3" data-hs-tab="#bar-with-underline-3"
+                                aria-controls="bar-with-underline-3" role="tab">
+                                Apple
                             </button>
                         </nav>
-                          
+
                         <div class="mt-3">
-                        <div id="bar-with-underline-1" role="tabpanel" aria-labelledby="bar-with-underline-item-1">
-                            <div>
-                                <fieldset>
-                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Brand</legend>
+                            <div id="bar-with-underline-1" role="tabpanel" aria-labelledby="bar-with-underline-item-1">
+                                <div>
+                                    <fieldset>
+                                        <legend class="block text-sm font-medium leading-6 text-gray-900">Brand</legend>
 
-                                    <input id="core" class="peer/core mb-1 mr-1" type="radio" name="brand" checked />
-                                    <label for="core" class="peer-checked/core:text-green-950 mr-4">Core</label>
+                                        <input id="core" value="core" class="peer/core mb-1 mr-1" type="radio"
+                                            name="brand" checked />
+                                        <label for="core" class="peer-checked/core:text-green-950 mr-4">Core</label>
 
-                                    <input id="pentium" class="peer/pentium mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="pentium" class="peer-checked/pentium:text-green-950 mr-4">Pentium</label>
+                                        <input id="pentium" value="pentium" class="peer/pentium mb-1 mr-1" type="radio"
+                                            name="brand" />
+                                        <label for="pentium"
+                                            class="peer-checked/pentium:text-green-950 mr-4">Pentium</label>
 
-                                    <input id="celeron" class="peer/celeron mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="celeron" class="peer-checked/celeron:text-green-950">Celeron</label>
+                                        <input id="celeron" value="celeron" class="peer/celeron mb-1 mr-1" type="radio"
+                                            name="brand" />
+                                        <label for="celeron" class="peer-checked/celeron:text-green-950">Celeron</label>
 
-                                    <div class="hidden peer-checked/core:block">
-                                        <div class="sm:col-span-3">
-                                            <label for="core-modifier" class="block text-sm font-medium leading-6 text-gray-900">Brand Modifier</label>
-                                            <div class="mt-2">
-                                                <select id="core-modifier" name="core-modifier" autocomplete="name" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>i3</option>
-                                                    <option>i5</option>
-                                                    <option>i7</option>
-                                                    <option>i9</option>
-                                                </select>
+                                        <div class="hidden peer-checked/core:block">
+                                            <div class="sm:col-span-3">
+                                                <label for="core-modifier"
+                                                    class="block text-sm font-medium leading-6 text-gray-900">Brand
+                                                    Modifier</label>
+                                                <div class="mt-2">
+                                                    <select id="core-modifier" name="core-modifier"
+                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        <option value="i3">i3</option>
+                                                        <option value="i5">i5</option>
+                                                        <option value="i7">i7</option>
+                                                        <option value="i9">i9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <label for="core-generation"
+                                                    class="block text-sm font-medium leading-6 text-gray-900">Generation</label>
+                                                <div class="mt-2">
+                                                    <select id="core-generation" name="core-generation"
+                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        <option value="1">1st</option>
+                                                        <option value="2">2nd</option>
+                                                        <option value="3">3rd</option>
+                                                        <option value="4">4th</option>
+                                                        <option value="5">5th</option>
+                                                        <option value="6">6th</option>
+                                                        <option value="7">7th</option>
+                                                        <option value="8">8th</option>
+                                                        <option value="9">9th</option>
+                                                        <option value="10">10th</option>
+                                                        <option value="11">11th</option>
+                                                        <option value="12">12th</option>
+                                                        <option value="13">13th</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="mt-3">
-                                            <label for="core-generation" class="block text-sm font-medium leading-6 text-gray-900">Generation</label>
-                                            <div class="mt-2">
-                                                <select id="core-generation" name="core-generation" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>1st</option>
-                                                    <option>2nd</option>
-                                                    <option>3rd</option>
-                                                    <option>4th</option>
-                                                    <option>5th</option>
-                                                    <option>6th</option>
-                                                    <option>7th</option>
-                                                    <option>8th</option>
-                                                    <option>9th</option>
-                                                    <option>10th</option>
-                                                    <option>11th</option>
-                                                    <option>12th</option>
-                                                    <option>13th</option>
-                                                </select>
+                                        <div class="hidden peer-checked/pentium:block">
+                                            <div class="sm:col-span-3">
+                                                <label for="pentium-modifier"
+                                                    class="block text-sm font-medium leading-6 text-gray-900">Brand
+                                                    Modifier</label>
+                                                <div class="mt-2">
+                                                    <select id="pentium-modifier" name="pentium-modifier"
+                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        <option value="gold">Gold</option>
+                                                        <option value="silver">Silver</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="hidden peer-checked/pentium:block">
-                                        <div class="sm:col-span-3">
-                                            <label for="pentium-modifier" class="block text-sm font-medium leading-6 text-gray-900">Brand Modifier</label>
-                                            <div class="mt-2">
-                                                <select id="pentium-modifier" name="pentium-modifier" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>Gold</option>
-                                                    <option>Silver</option>
-                                                </select>
-                                            </div>
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
+                                </div>
                             </div>
-                        </div>
-                        <div id="bar-with-underline-2" class="hidden" role="tabpanel" aria-labelledby="bar-with-underline-item-2">
-                            <div>
-                                <fieldset>
-                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Brand</legend>
+                            <div id="bar-with-underline-2" class="hidden" role="tabpanel"
+                                aria-labelledby="bar-with-underline-item-2">
+                                <div>
+                                    <fieldset>
+                                        <legend class="block text-sm font-medium leading-6 text-gray-900">Brand</legend>
 
-                                    <input id="ryzen" class="peer/ryzen mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="ryzen" class="peer-checked/ryzen:text-green-950 mr-4">Ryzen</label>
+                                        <input id="ryzen" value="ryzen" class="peer/ryzen mb-1 mr-1" type="radio"
+                                            name="brand" />
+                                        <label for="ryzen" class="peer-checked/ryzen:text-green-950 mr-4">Ryzen</label>
 
-                                    <input id="athlon" class="peer/athlon mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="athlon" class="peer-checked/athlon:text-green-950">Athlon</label>
+                                        <input id="athlon" value="athlon" class="peer/athlon mb-1 mr-1" type="radio"
+                                            name="brand" />
+                                        <label for="athlon" class="peer-checked/athlon:text-green-950">Athlon</label>
 
-                                    <div class="hidden peer-checked/ryzen:block">
-                                        <div class="">
-                                            <label for="ryzen-modifier" class="block text-sm font-medium leading-6 text-gray-900">Brand Modifier</label>
-                                            <div class="mt-2">
-                                                <select id="ryzen-modifier" name="core-modifier" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>3</option>
-                                                    <option>5</option>
-                                                    <option>7</option>
-                                                    <option>9</option>
-                                                </select>
+                                        <div class="hidden peer-checked/ryzen:block">
+                                            <div class="">
+                                                <label for="ryzen-modifier"
+                                                    class="block text-sm font-medium leading-6 text-gray-900">Brand
+                                                    Modifier</label>
+                                                <div class="mt-2">
+                                                    <select id="ryzen-modifier" name="ryzen-modifier"
+                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        <option value="3">3</option>
+                                                        <option value="5">5</option>
+                                                        <option value="7">7</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <label for="ryzen-generation"
+                                                    class="block text-sm font-medium leading-6 text-gray-900">Generation</label>
+                                                <div class="mt-2">
+                                                    <select id="ryzen-generation" name="ryzen-generation"
+                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        <option value="1">1st</option>
+                                                        <option value="2">2nd</option>
+                                                        <option value="3">3rd</option>
+                                                        <option value="4">4th</option>
+                                                        <option value="5">5th</option>
+                                                        <option value="6">6th</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="mt-3">
-                                            <label for="ryzen-generation" class="block text-sm font-medium leading-6 text-gray-900">Generation</label>
-                                            <div class="mt-2">
-                                                <select id="ryzen-generation" name="ryzen-generation" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>1st</option>
-                                                    <option>2nd</option>
-                                                    <option>3rd</option>
-                                                    <option>4th</option>
-                                                    <option>5th</option>
-                                                    <option>6th</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
+                                </div>
                             </div>
-                        </div>
-                        <div id="bar-with-underline-3" class="hidden" role="tabpanel" aria-labelledby="bar-with-underline-item-3">
-                            <div>
-                                <fieldset>
-                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Series</legend>
+                            <div id="bar-with-underline-3" class="hidden" role="tabpanel"
+                                aria-labelledby="bar-with-underline-item-3">
+                                <div>
+                                    <fieldset>
+                                        <legend class="block text-sm font-medium leading-6 text-gray-900">Series
+                                        </legend>
 
-                                    <input id="m1" class="peer/m1 mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="m1" class="peer-checked/m1:text-green-950 mr-4">M1</label>
+                                        <input id="m1" value="m1" class="peer/m1 mb-1 mr-1" type="radio" name="brand" />
+                                        <label for="m1" class="peer-checked/m1:text-green-950 mr-4">M1</label>
 
-                                    <input id="m2" class="peer/m2 mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="m2" class="peer-checked/m2:text-green-950 mr-4">M2</label>
+                                        <input id="m2" value="m2" class="peer/m2 mb-1 mr-1" type="radio" name="brand" />
+                                        <label for="m2" class="peer-checked/m2:text-green-950 mr-4">M2</label>
 
-                                    <input id="m3" class="peer/m3 mb-1 mr-1" type="radio" name="brand" />
-                                    <label for="m3" class="peer-checked/m3:text-green-950">M3</label>
-                                </fieldset>
+                                        <input id="m3" value="m3" class="peer/m3 mb-1 mr-1" type="radio" name="brand" />
+                                        <label for="m3" class="peer-checked/m3:text-green-950">M3</label>
+                                    </fieldset>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="mt-3 flex flex-row w-full justify-between">
                             <div class="flex-1 mr-1">
-                                <label for="processor-core" class="block text-sm font-medium leading-6 text-gray-900">Cores</label>
+                                <label for="processor-core"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Cores</label>
                                 <div class="mt-2">
-                                <input type="number" name="processor-core" id="processor-core" placeholder="2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                    <input type="number" name="processor-core" id="processor-core" placeholder="2"
+                                        required
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                    <p class="hidden text-red-500 text-xs italic">Please fill out this field.</p>
                                 </div>
                             </div>
                             <div class="flex-1 ml-1">
-                                <label for="processor-speed" class="block text-sm font-medium leading-6 text-gray-900">Speed (GHz)</label>
+                                <label for="processor-speed"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Speed (GHz)</label>
                                 <div class="mt-2">
-                                <input type="number" name="processor-speed" id="processor-speed" placeholder="2.5" class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                    <input type="number" name="processor-speed" id="processor-speed" placeholder="2.5"
+                                        required
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                    <p class="hidden text-red-500 text-xs italic">Please fill out this field.</p>
                                 </div>
                             </div>
                         </div>
@@ -184,11 +232,17 @@
                         <h3 class="font-bold text-2xl text-green-950">GPU</h3>
                         <div class="flex">
                             <div class="flex-1 bg-gray-100 hover:bg-gray-200 rounded-xl transition p-1">
-                                <nav class="flex space-x-1" aria-label="Tabs" role="tablist">
-                                    <button type="button" class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-lg hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active" id="segment-item-1" data-hs-tab="#segment-1" aria-controls="segment-1" role="tab">
+                                <nav id="gpu-form" class="flex space-x-1" aria-label="Tabs" role="tablist">
+                                    <button type="button" value="integrated"
+                                        class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-lg hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active"
+                                        id="segment-item-1" data-hs-tab="#segment-1" aria-controls="segment-1"
+                                        role="tab">
                                         Integrated
                                     </button>
-                                    <button type="button" class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-lg hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none" id="segment-item-2" data-hs-tab="#segment-2" aria-controls="segment-2" role="tab">
+                                    <button type="button" value="dedicated"
+                                        class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-lg hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
+                                        id="segment-item-2" data-hs-tab="#segment-2" aria-controls="segment-2"
+                                        role="tab">
                                         Dedicated
                                     </button>
                                 </nav>
@@ -198,35 +252,46 @@
                         <div class="mt-3">
                             <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
                                 <fieldset>
-                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Integrated GPUs</legend>
+                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Integrated GPUs
+                                    </legend>
 
-                                    <input id="in-intel" class="peer/in-intel mb-1 mr-1" type="radio" name="gpu-manu" checked />
-                                    <label for="in-intel" class="peer-checked/in-intel:text-green-950 mr-4">Intel</label>
+                                    <input id="in-intel" value="in-intel" class="peer/in-intel mb-1 mr-1" type="radio"
+                                        name="gpu-manu" checked />
+                                    <label for="in-intel"
+                                        class="peer-checked/in-intel:text-green-950 mr-4">Intel</label>
 
-                                    <input id="in-amd" class="peer/in-amd mb-1 mr-1" type="radio" name="gpu-manu" />
+                                    <input id="in-amd" value="in-amd" class="peer/in-amd mb-1 mr-1" type="radio"
+                                        name="gpu-manu" />
                                     <label for="in-amd" class="peer-checked/in-amd:text-green-950">AMD</label>
 
                                     <div class="hidden peer-checked/in-intel:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix" class="block text-sm font-medium leading-6 text-gray-900">Brand and Prefix</label>
+                                            <label for="brand-and-prefix"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Brand and
+                                                Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="brand-and-prefix" autocomplete="name" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>HD</option>
-                                                    <option>UHD</option>
-                                                    <option>Iris Plus</option>
-                                                    <option>Iris Xe</option>
+                                                <select id="brand-and-prefix" name="in-intel-brand-and-prefix"
+                                                    autocomplete="name"
+                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    <option value="in-intel-hd">HD</option>
+                                                    <option value="in-intel-uhd">UHD</option>
+                                                    <option value="in-intel-iris-plus">Iris Plus</option>
+                                                    <option value="in-intel-iris-xe">Iris Xe</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="hidden peer-checked/in-amd:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix" class="block text-sm font-medium leading-6 text-gray-900">Brand and Prefix</label>
+                                            <label for="brand-and-prefix"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Brand and
+                                                Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="brand-and-prefix" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>Radeon R</option>
-                                                    <option>Radeon Vega</option>
-                                                    <option>Radeon HD</option>
+                                                <select id="brand-and-prefix" name="in-amd-brand-and-prefix"
+                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    <option value="in-amd-radeon-r">Radeon R</option>
+                                                    <option value="in-amd-radeon-vega">Radeon Vega</option>
+                                                    <option value="in-amd-radeon-hd">Radeon HD</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -235,48 +300,63 @@
                             </div>
                             <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
                                 <fieldset>
-                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Dedicated GPUs</legend>
+                                    <legend class="block text-sm font-medium leading-6 text-gray-900">Dedicated GPUs
+                                    </legend>
 
-                                    <input id="de-intel" class="peer/de-intel mb-1 mr-1" type="radio" name="gpu-manu" />
-                                    <label for="de-intel" class="peer-checked/de-intel:text-green-950 mr-4">Intel</label>
+                                    <input id="de-intel" value="de-intel" class="peer/de-intel mb-1 mr-1" type="radio"
+                                        name="gpu-manu" />
+                                    <label for="de-intel"
+                                        class="peer-checked/de-intel:text-green-950 mr-4">Intel</label>
 
-                                    <input id="de-amd" class="peer/de-amd mb-1 mr-1" type="radio" name="gpu-manu" />
+                                    <input id="de-amd" value="de-amd" class="peer/de-amd mb-1 mr-1" type="radio"
+                                        name="gpu-manu" />
                                     <label for="de-amd" class="peer-checked/de-amd:text-green-950 mr-4">AMD</label>
 
-                                    <input id="nvidia" class="peer/nvidia mb-1 mr-1" type="radio" name="gpu-manu" />
+                                    <input id="nvidia" value="nvidia" class="peer/nvidia mb-1 mr-1" type="radio"
+                                        name="gpu-manu" />
                                     <label for="nvidia" class="peer-checked/nvidia:text-green-950">NVIDIA</label>
 
                                     <div class="hidden peer-checked/de-intel:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix" class="block text-sm font-medium leading-6 text-gray-900">Brand and Prefix</label>
+                                            <label for="brand-and-prefix"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Brand and
+                                                Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="brand-and-prefix" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>Iris Xe</option>
+                                                <select id="brand-and-prefix" name="de-intel-brand-and-prefix"
+                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    <option value="de-intel-iris-xe">Iris Xe</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="hidden peer-checked/de-amd:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix" class="block text-sm font-medium leading-6 text-gray-900">Brand and Prefix</label>
+                                            <label for="brand-and-prefix"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Brand and
+                                                Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="brand-and-prefix" autocomplete="name" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>Radeon RX</option>
-                                                    <option>Radeon Vega</option>
-                                                    <option>Radeon Pro</option>
+                                                <select id="brand-and-prefix" name="de-amd-brand-and-prefix"
+                                                    autocomplete="name"
+                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    <option value="de-amd-radeon-rx">Radeon RX</option>
+                                                    <option value="de-amd-radeon-vega">Radeon Vega</option>
+                                                    <option value="de-amd-radeon-pro">Radeon Pro</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="hidden peer-checked/nvidia:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix" class="block text-sm font-medium leading-6 text-gray-900">Brand and Prefix</label>
+                                            <label for="brand-and-prefix"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Brand and
+                                                Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="brand-and-prefix" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                                    <option>GeForce RTX</option>
-                                                    <option>GeForce GTX</option>
-                                                    <option>GeForce GT</option>
-                                                    <option>GeForce MX</option>
+                                                <select id="brand-and-prefix" name="nvidia-brand-and-prefix"
+                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    <option value="rtx">GeForce RTX</option>
+                                                    <option value="gtx">GeForce GTX</option>
+                                                    <option value="gt">GeForce GT</option>
+                                                    <option value="mx">GeForce MX</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -284,95 +364,117 @@
                                 </fieldset>
                                 <div class="mt-3 flex flex-row w-full justify-between">
                                     <div class="flex-1 mr-1">
-                                        <label for="gpu-core" class="block text-sm font-medium leading-6 text-gray-900">Cores</label>
+                                        <label for="gpu-core"
+                                            class="block text-sm font-medium leading-6 text-gray-900">Cores</label>
                                         <div class="mt-2">
-                                        <input type="number" name="gpu-core" id="gpu-core" placeholder="8" class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                            <input type="number" name="gpu-core" id="gpu-core" placeholder="8" required
+                                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                            <p class="hidden text-red-500 text-xs italic">Please fill out this field.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="flex-1 ml-1">
-                                        <label for="vram" class="block text-sm font-medium leading-6 text-gray-900">VRAM (GB)</label>
+                                        <label for="vram" class="block text-sm font-medium leading-6 text-gray-900">VRAM
+                                            (GB)</label>
                                         <div class="mt-2">
-                                        <input type="number" name="vram" id="vram" placeholder="4" class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                            <input type="number" name="vram" id="vram" placeholder="4" required
+                                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                            <p class="hidden text-red-500 text-xs italic">Please fill out this field.
+                                            </p>
                                         </div>
                                     </div>
-                                   </div>
-                            </div>
-                      </div>
-                  </div>
-                  <div class="border-t mt-3 border-gray-900/10">
-                    <h3 class="font-bold text-2xl text-green-950">RAM</h3>
-                    <div class="sm:col-span-4">
-                        <label for="ram" class="block text-sm font-medium leading-6 text-gray-900">Size (MB)</label>
-                        <div class="mt-2">
-                          <input id="ram" name="ram" type="number" placeholder="8" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                        </div>
-                      </div>
-                  </div>
-                  <div class="border-t mt-3 border-gray-900/10">
-                    <h3 class="font-bold text-2xl text-green-950">Storage</h3>
-                    <div>
-                        <div class="col-span-full">
-                            <label for="storage" class="block text-sm font-medium leading-6 text-gray-900">Size (GB)</label>
-                            <div class="mt-2">
-                              <input type="number" name="storage" placeholder="500" id="storage" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                            </div>
-                        </div>
-                        <div class="sm:col-span-3">
-                            <label for="storage-type" class="block text-sm font-medium leading-6 text-gray-900">Type</label>
-                            <div class="mt-2">
-                              <select id="storage-type" name="storage-type" class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                <option>SSD</option>
-                                <option>HDD</option>
-                              </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="mt-6 flex items-center justify-end gap-x-6">
-                    <button type="submit" class="rounded-md w-full bg-gradient-to-l from-green-950 to-green-600 px-3 py-2 text-sm text-white hover:from-white hover:to-green-white border-2 border-green-950 hover:text-green-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-950" data-hs-overlay="#hs-vertically-centered-modal">Save</button>
-                  </div>
-                  
-                  <div id="hs-vertically-centered-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none">
-                    <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
-                      <div class="w-full flex flex-col bg-white border rounded-xl pointer-events-auto">
-                        <div class="flex justify-between items-center py-3 px-4">
-                          <h3 class="font-bold text-green-950">
-                            Key Activities
-                          </h3>
-                          <button type="button" class="flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-green-950 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-vertically-centered-modal">
-                            <span class="sr-only">Close</span>
-                            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M18 6 6 18"></path>
-                              <path d="m6 6 12 12"></path>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="p-4 overflow-y-auto">
-                            <p class="text-green-950">This is what is best suited for your laptop...</p>
-                            <div id="key-activities">
-                                
+                    <div class="border-t mt-3 border-gray-900/10">
+                        <h3 class="font-bold text-2xl text-green-950">RAM</h3>
+                        <div class="sm:col-span-4">
+                            <label for="ram" class="block text-sm font-medium leading-6 text-gray-900">Size (MB)</label>
+                            <div class="mt-2">
+                                <input id="ram" name="ram" type="number" required placeholder="8"
+                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                <p class="hidden text-red-500 text-xs italic">Please fill out this field.</p>
                             </div>
                         </div>
-                        <div class="flex justify-end items-center gap-x-2 py-3 px-4">
-                          <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-green-950 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-vertically-centered-modal">
-                            Close
-                          </button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-              </div>
-              <div id="card-type-tab-2" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-2">
-                <p class="text-3xl text-center font-bold text-green-950">Coming Soon!</p>
-              </div>
-          </div>
-      </div>
-      <footer class="bottom-0 h-32 mt-6 bg-gradient-to-l from-green-950 to-green-600">
-        <div></div>
-        <div></div>
-      </footer>
-  </main>
-  <script src="./node_modules/preline/dist/preline.js"></script>
-  <script src="script.js"></script>
+                    <div class="border-t mt-3 border-gray-900/10">
+                        <h3 class="font-bold text-2xl text-green-950">Storage</h3>
+                        <div>
+                            <div class="col-span-full">
+                                <label for="storage" class="block text-sm font-medium leading-6 text-gray-900">Size
+                                    (GB)</label>
+                                <div class="mt-2">
+                                    <input type="number" name="storage" placeholder="500" required id="storage"
+                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                    <p id="storage-error" class="hidden text-red-500 text-xs italic">Please fill out
+                                        this field.</p>
+                                </div>
+                            </div>
+                            <div class="sm:col-span-3">
+                                <label for="storage-type"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Type</label>
+                                <div class="mt-2">
+                                    <select id="storage-type" name="storage-type"
+                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                        <option>SSD</option>
+                                        <option>HDD</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center justify-end gap-x-6">
+                        <button id="save" type="submit"
+                            class="rounded-md w-full bg-gradient-to-l from-green-950 to-green-600 px-3 py-2 text-sm text-white hover:from-white hover:to-green-white border-2 border-green-950 hover:text-green-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-950"
+                            data-hs-overlay="#hs-vertically-centered-modal">Save</button>
+                    </div>
+
+                    <div id="key-activities-modal"
+                        class="hidden bg-[#00000066] size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none">
+                        <div
+                            class="mt-7 opacity-100 duration-500 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
+                            <div id="key-activity"
+                                class="w-full flex flex-col bg-white border rounded-xl pointer-events-auto">
+                                <div class="flex justify-between items-center py-3 px-4">
+                                    <h3 class="font-bold text-green-950">Key Activities</h3>
+                                    <button type="button"
+                                        class="flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-green-950 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                                        id="close-modal-button">
+                                        <span class="sr-only">Close</span>
+                                        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 6 6 18"></path>
+                                            <path d="m6 6 12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="p-4 overflow-y-auto">
+                                    <p class="text-green-950">This is what is best suited for your laptop...</p>
+                                    <div id="key-activities"></div>
+                                </div>
+                                <div class="flex justify-end items-center gap-x-2 py-3 px-4">
+                                    <button type="button"
+                                        class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-green-950 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                        id="close-modal-button-close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-type-tab-2" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-2">
+                    <p class="text-3xl text-center font-bold text-green-950">Coming Soon!</p>
+                </div>
+            </div>
+        </div>
+        <footer class="bottom-0 h-32 mt-6 bg-gradient-to-l from-green-950 to-green-600">
+            <div></div>
+            <div></div>
+        </footer>
+    </main>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
