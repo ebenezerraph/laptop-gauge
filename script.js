@@ -56,3 +56,54 @@ saveButton.onclick = () => {
      }
 
 }
+
+
+
+function syncClassToChecked(sourceId, targetId, className) {
+     const sourceElement = document.getElementById(sourceId);
+     const targetElement = document.getElementById(targetId);
+
+     function log(message) {
+          console.log(`[${new Date().toLocaleTimeString()}] ${message}`);
+     }
+
+     function updateTarget() {
+          const hasClass = sourceElement.classList.contains(className);
+          targetElement.checked = hasClass;
+          log(`Source element ${sourceId} ${hasClass ? 'has' : 'does not have'} class "${className}". Checkbox is now ${hasClass ? 'checked' : 'unchecked'}.`);
+     }
+
+     // Initial check and update
+     log('Initial sync');
+     updateTarget();
+
+     // Set up the observer
+     const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+               if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    log('Class changed. Updating target.');
+                    updateTarget();
+               }
+          });
+     });
+
+     // Start observing
+     observer.observe(sourceElement, { attributes: true, attributeFilter: ['class'] });
+     log('Started observing source element for class changes.');
+
+     // Return a function to stop observing
+     return () => {
+          observer.disconnect();
+          log('Stopped observing source element.');
+     };
+}
+
+// Usage
+syncClassToChecked("bar-with-underline-item-1", "core", "active");
+syncClassToChecked("bar-with-underline-item-2", "ryzen", "active");
+syncClassToChecked("bar-with-underline-item-3", "m1", "active");
+syncClassToChecked("segment-item-1", "in-intel", "active");
+syncClassToChecked("segment-item-2", "de-intel", "active");
+
+// To stop syncing later:
+// stopSync();

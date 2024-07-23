@@ -43,29 +43,30 @@
                     <div>
                         <h3 class="font-bold text-2xl text-green-950">Processor</h3>
                         <p class="block text-sm font-medium leading-6 text-gray-900">Manufacturer</p>
-                        <nav id="manufacturer" class="relative z-0 flex border rounded-xl overflow-hidden"
+                        <nav id="manufacturer"
+                            class="mt-2 relative h-[2.375rem] z-0 flex border rounded-md overflow-hidden"
                             aria-label="Tabs" role="tablist">
                             <button type="button" value="intel-processor"
-                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active"
+                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-2 px-2 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active"
                                 id="bar-with-underline-item-1" data-hs-tab="#bar-with-underline-1"
                                 aria-controls="bar-with-underline-1" role="tab">
                                 Intel
                             </button>
                             <button type="button" value="amd-processor"
-                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
+                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-2 px-2 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
                                 id="bar-with-underline-item-2" data-hs-tab="#bar-with-underline-2"
                                 aria-controls="bar-with-underline-2" role="tab">
                                 AMD
                             </button>
                             <button type="button" value="apple-processor"
-                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
+                                class="hs-tab-active:border-b-green-900 hs-tab-active:text-gray-900 relative min-w-0 flex-1 bg-white first:border-s-0 border-s border-b-2 py-2 px-2 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 focus:outline-none focus:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
                                 id="bar-with-underline-item-3" data-hs-tab="#bar-with-underline-3"
                                 aria-controls="bar-with-underline-3" role="tab">
                                 Apple
                             </button>
                         </nav>
 
-                        <div class="mt-3">
+                        <div class="mt-4">
                             <div id="bar-with-underline-1" role="tabpanel" aria-labelledby="bar-with-underline-item-1">
                                 <div>
                                     <fieldset>
@@ -84,14 +85,14 @@
                                             name="brand" />
                                         <label for="celeron" class="peer-checked/celeron:text-green-950">Celeron</label>
 
-                                        <div class="hidden peer-checked/core:block">
-                                            <div class="sm:col-span-3">
+                                        <div class="hidden peer-checked/core:flex mt-4 flex-row w-full justify-between">
+                                            <div class="sm:col-span-3 flex-1 mr-1">
                                                 <label for="core-modifier"
                                                     class="block text-sm font-medium leading-6 text-gray-900">Brand
                                                     Modifier</label>
                                                 <div class="mt-2">
                                                     <select id="core-modifier" name="core-modifier"
-                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                         <option value="i3">i3</option>
                                                         <option value="i5">i5</option>
                                                         <option value="i7">i7</option>
@@ -99,12 +100,12 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="mt-3">
+                                            <div class="flex-1 ml-1">
                                                 <label for="core-generation"
                                                     class="block text-sm font-medium leading-6 text-gray-900">Generation</label>
                                                 <div class="mt-2">
                                                     <select id="core-generation" name="core-generation"
-                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                         <option value="1">1st</option>
                                                         <option value="2">2nd</option>
                                                         <option value="3">3rd</option>
@@ -123,13 +124,13 @@
                                             </div>
                                         </div>
                                         <div class="hidden peer-checked/pentium:block">
-                                            <div class="sm:col-span-3">
+                                            <div class="sm:col-span-3 mt-4">
                                                 <label for="pentium-modifier"
                                                     class="block text-sm font-medium leading-6 text-gray-900">Brand
                                                     Modifier</label>
                                                 <div class="mt-2">
                                                     <select id="pentium-modifier" name="pentium-modifier"
-                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                         <option value="gold">Gold</option>
                                                         <option value="silver">Silver</option>
                                                     </select>
@@ -152,14 +153,15 @@
                                             name="brand" />
                                         <label for="athlon" class="peer-checked/athlon:text-green-950">Athlon</label>
 
-                                        <div class="hidden peer-checked/ryzen:block">
-                                            <div class="">
+                                        <div
+                                            class="hidden peer-checked/ryzen:flex mt-4 flex-row w-full justify-between">
+                                            <div class="flex-1 mr-1">
                                                 <label for="ryzen-modifier"
                                                     class="block text-sm font-medium leading-6 text-gray-900">Brand
                                                     Modifier</label>
                                                 <div class="mt-2">
                                                     <select id="ryzen-modifier" name="ryzen-modifier"
-                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                         <option value="3">3</option>
                                                         <option value="5">5</option>
                                                         <option value="7">7</option>
@@ -167,12 +169,12 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="mt-3">
+                                            <div class="flex-1 ml-1">
                                                 <label for="ryzen-generation"
                                                     class="block text-sm font-medium leading-6 text-gray-900">Generation</label>
                                                 <div class="mt-2">
                                                     <select id="ryzen-generation" name="ryzen-generation"
-                                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                         <option value="1">1st</option>
                                                         <option value="2">2nd</option>
                                                         <option value="3">3rd</option>
@@ -205,7 +207,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-3 flex flex-row w-full justify-between">
+                        <div class="mt-4 flex flex-row w-full justify-between">
                             <div class="flex-1 mr-1">
                                 <label for="processor-core"
                                     class="block text-sm font-medium leading-6 text-gray-900">Cores</label>
@@ -228,19 +230,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-t mt-3 border-gray-900/10">
+                    <div class="mt-8">
                         <h3 class="font-bold text-2xl text-green-950">GPU</h3>
-                        <div class="flex">
-                            <div class="flex-1 bg-gray-100 hover:bg-gray-200 rounded-xl transition p-1">
+                        <div class="mt-2 lex">
+                            <div class="flex-1 bg-gray-100 h-[2.75rem] hover:bg-gray-200 rounded-md transition p-1">
                                 <nav id="gpu-form" class="flex space-x-1" aria-label="Tabs" role="tablist">
                                     <button type="button" value="integrated"
-                                        class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-lg hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active"
+                                        class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: h-[2.25rem] py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-sm hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none active"
                                         id="segment-item-1" data-hs-tab="#segment-1" aria-controls="segment-1"
                                         role="tab">
                                         Integrated
                                     </button>
                                     <button type="button" value="dedicated"
-                                        class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-lg hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
+                                        class="flex-1 hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active: hs-tab-active: h-[2.25rem] py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-sm hover:hover:text-greeborder-b-green-900 disabled:opacity-50 disabled:pointer-events-none"
                                         id="segment-item-2" data-hs-tab="#segment-2" aria-controls="segment-2"
                                         role="tab">
                                         Dedicated
@@ -249,7 +251,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-3">
+                        <div class="mt-4">
                             <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
                                 <fieldset>
                                     <legend class="block text-sm font-medium leading-6 text-gray-900">Integrated GPUs
@@ -264,15 +266,15 @@
                                         name="gpu-manu" />
                                     <label for="in-amd" class="peer-checked/in-amd:text-green-950">AMD</label>
 
-                                    <div class="hidden peer-checked/in-intel:block">
+                                    <div class="hidden mt-4 peer-checked/in-intel:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix"
+                                            <label for="in-intel-brand-and-prefix"
                                                 class="block text-sm font-medium leading-6 text-gray-900">Brand and
                                                 Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="in-intel-brand-and-prefix"
+                                                <select id="in-intel-brand-and-prefix" name="in-intel-brand-and-prefix"
                                                     autocomplete="name"
-                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                     <option value="in-intel-hd">HD</option>
                                                     <option value="in-intel-uhd">UHD</option>
                                                     <option value="in-intel-iris-plus">Iris Plus</option>
@@ -281,14 +283,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="hidden peer-checked/in-amd:block">
+                                    <div class="hidden mt-4 peer-checked/in-amd:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix"
+                                            <label for="in-amd-brand-and-prefix"
                                                 class="block text-sm font-medium leading-6 text-gray-900">Brand and
                                                 Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="in-amd-brand-and-prefix"
-                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                <select id="in-amd-brand-and-prefix" name="in-amd-brand-and-prefix"
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                     <option value="in-amd-radeon-r">Radeon R</option>
                                                     <option value="in-amd-radeon-vega">Radeon Vega</option>
                                                     <option value="in-amd-radeon-hd">Radeon HD</option>
@@ -316,28 +318,28 @@
                                         name="gpu-manu" />
                                     <label for="nvidia" class="peer-checked/nvidia:text-green-950">NVIDIA</label>
 
-                                    <div class="hidden peer-checked/de-intel:block">
+                                    <div class="hidden mt-4 peer-checked/de-intel:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix"
+                                            <label for="de-intel-brand-and-prefix"
                                                 class="block text-sm font-medium leading-6 text-gray-900">Brand and
                                                 Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="de-intel-brand-and-prefix"
-                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                <select id="de-intel-brand-and-prefix" name="de-intel-brand-and-prefix"
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                     <option value="de-intel-iris-xe">Iris Xe</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="hidden peer-checked/de-amd:block">
+                                    <div class="hidden mt-4 peer-checked/de-amd:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix"
+                                            <label for="de-amd-brand-and-prefix"
                                                 class="block text-sm font-medium leading-6 text-gray-900">Brand and
                                                 Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="de-amd-brand-and-prefix"
+                                                <select id="de-amd-brand-and-prefix" name="de-amd-brand-and-prefix"
                                                     autocomplete="name"
-                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                     <option value="de-amd-radeon-rx">Radeon RX</option>
                                                     <option value="de-amd-radeon-vega">Radeon Vega</option>
                                                     <option value="de-amd-radeon-pro">Radeon Pro</option>
@@ -345,14 +347,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="hidden peer-checked/nvidia:block">
+                                    <div class="hidden mt-4 peer-checked/nvidia:block">
                                         <div class="sm:col-span-3">
-                                            <label for="brand-and-prefix"
+                                            <label for="nvidia-brand-and-prefix"
                                                 class="block text-sm font-medium leading-6 text-gray-900">Brand and
                                                 Prefix</label>
                                             <div class="mt-2">
-                                                <select id="brand-and-prefix" name="nvidia-brand-and-prefix"
-                                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                                <select id="nvidia-brand-and-prefix" name="nvidia-brand-and-prefix"
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                                     <option value="rtx">GeForce RTX</option>
                                                     <option value="gtx">GeForce GTX</option>
                                                     <option value="gt">GeForce GT</option>
@@ -362,7 +364,7 @@
                                         </div>
                                     </div>
                                 </fieldset>
-                                <div class="mt-3 flex flex-row w-full justify-between">
+                                <div class="mt-4 flex flex-row w-full justify-between">
                                     <div class="flex-1 mr-1">
                                         <label for="gpu-core"
                                             class="block text-sm font-medium leading-6 text-gray-900">Cores</label>
@@ -387,38 +389,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-t mt-3 border-gray-900/10">
+                    <div class="mt-8">
                         <h3 class="font-bold text-2xl text-green-950">RAM</h3>
                         <div class="sm:col-span-4">
                             <label for="ram" class="block text-sm font-medium leading-6 text-gray-900">Size (MB)</label>
                             <div class="mt-2">
                                 <input id="ram" name="ram" type="number" required placeholder="8"
-                                    class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                 <p class="hidden text-red-500 text-xs italic">Please fill out this field.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="border-t mt-3 border-gray-900/10">
+                    <div class="mt-8">
                         <h3 class="font-bold text-2xl text-green-950">Storage</h3>
-                        <div>
-                            <div class="col-span-full">
+                        <div class="flex flex-row w-full justify-between">
+                            <div class="flex-1 mr-1">
                                 <label for="storage" class="block text-sm font-medium leading-6 text-gray-900">Size
                                     (GB)</label>
                                 <div class="mt-2">
                                     <input type="number" name="storage" placeholder="500" required id="storage"
-                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                     <p id="storage-error" class="hidden text-red-500 text-xs italic">Please fill out
                                         this field.</p>
                                 </div>
                             </div>
-                            <div class="sm:col-span-3">
+                            <div class="flex-1 ml-1">
                                 <label for="storage-type"
                                     class="block text-sm font-medium leading-6 text-gray-900">Type</label>
                                 <div class="mt-2">
                                     <select id="storage-type" name="storage-type"
-                                        class="block w-full md:w-1/2 rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
-                                        <option>SSD</option>
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6">
                                         <option>HDD</option>
+                                        <option>SSD</option>
                                     </select>
                                 </div>
                             </div>
@@ -426,14 +428,14 @@
                     </div>
                     <div class="mt-6 flex items-center justify-end gap-x-6">
                         <button id="save" type="submit"
-                            class="rounded-md w-full bg-gradient-to-l from-green-950 to-green-600 px-3 py-2 text-sm text-white hover:from-white hover:to-green-white border-2 border-green-950 hover:text-green-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-950"
+                            class="rounded-md w-full bg-gradient-to-l from-green-950 to-green-600 px-3 py-2 text-sm text-white hover:from-green-600 hover:to-green-950 border-green-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-950"
                             data-hs-overlay="#hs-vertically-centered-modal">Save</button>
                     </div>
 
                     <div id="key-activities-modal"
                         class="hidden bg-[#00000066] size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none">
                         <div
-                            class="mt-7 opacity-100 duration-500 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
+                            class="mt-8 opacity-100 duration-500 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
                             <div id="key-activity"
                                 class="w-full flex flex-col bg-white border rounded-xl pointer-events-auto">
                                 <div class="flex justify-between items-center py-3 px-4">
